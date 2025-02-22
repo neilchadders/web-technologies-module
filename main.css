@@ -1,0 +1,108 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body{
+    max-width: 94%;
+    margin: 12px auto;
+    border: 1px solid black;
+    padding: 0 25px 20px;
+    position: relative;
+
+}
+
+main{
+    width: 66%;
+    border-right: 2px solid black;
+    
+}
+
+section{
+ 
+        width: 66%; /* Takes up 65% of the width */
+        float: left;
+    
+}
+
+aside{
+    width: 33%;
+    padding: 1em;
+    border-left: 2px solid black;
+    position: absolute;
+   right: 30px;
+   top: 30px;
+}
+
+header{
+    max-width: 95%;
+    padding-top: 20px;
+    background-color: red;
+}
+.main-header{
+    color: blue;
+    text-align: center;
+}
+
+/* Navbar CSS */
+nav ul {
+    list-style: none;
+
+}
+
+
+nav ul li {
+    float: left;
+    margin: 0 15px;
+    
+}
+
+nav ul li a  {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    border-right: 2px solid white;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;}
+    
+
+    
+
+    /*  logo */
+    .logo{
+    width: 14%;
+    float: left;
+
+    }
+
+    /*  footer */
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        clear: both; /* Pushes footer below floated elements */
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 900px) {
+        body{
+            font-size: 40%;
+        }
+        
+    }
+
+    @media only screen and (max-width: 767px) {
+      .logo{
+        min-width: 280px;
+      }
+        }
+        
+    
