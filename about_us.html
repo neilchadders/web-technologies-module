@@ -1,18 +1,164 @@
 <html>
 <head>
     <title>Online Career Progression </title>
- <link rel="stylesheet" type="text/css" href="style.css">
-</head>     
+    <meta   charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Career Progression">
+    <meta name="keywords" content="Career, Progression, Online">
+    <meta name="author" content="Online Career Progression">
+    
+ <link rel="stylesheet" type="text/css" href="styles/main.css">
+ <link rel="stylesheet" type="text/css" href="styles/about_us.styles.css">
+ <link rel="stylesheet" type="text/css" href="styles/slicknav.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/jquery.slicknav.min.js"></script>
+<script>
+   $(document).ready(function(){
+    $('.main-nav').slicknav({
+        prependTo: ".mobile_menu",
+          });
+});
+</script>
+
+</head> 
+    
 <body>
     <header>
-        <h1 class = "main-header">Online Career Progression</h1>
+      
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a> 
+        <h1 class="main-header">Online Career Progression</h1>
+     
+
+        <div class="mobile_menu"></div> <!-- Mobile Menu Container for slicknav -->
+        <nav class="main-nav">
+            <ul>
+          
+                <!-- Two Tier Navbar -->
+                <li>
+                    <a href="#">About</a>
+                    <ul class="two-tier">
+                        <li><a href="about_us.html#mission">Our Mission</a></li>
+                        <li><a href="about_us.html#global-reach">Global Reach</a></li>
+                        <li><a href="about_us.html#staff">Staff Members</a></li>
+                        <li><a href="about_us.html#growth">Promoting Professional Growth</a></li>
+                    </ul>
+                </li>
+                <li><a href="events_news.html">Events</a></li>
+                <li><a href="training_programs.html" class="last-item">Training Programs</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+        </nav>
+        
     </header>
-    <main>
 
-    </main>
+    <!-- Main Content Section -->
+   <main id = about-main>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Online Career Progression was founded by a group of career development experts who wanted to create a platform for professionals to advance their careers. It started as a small online initiative with a commitment to providing high-quality career advice and skill training programs. Our vision is to continue growing and expanding our reach while maintaining our core values of excellence, innovation, and client satisfaction. Looking ahead, our future strategy involves:
+
+            Technology Enhancement: Continuously improving our website and mobile app for a seamless and user-friendly experience.
+            Diversification: Expanding our training program catalogue to include more niche and emerging skills. 
+            Sustainability: Strengthening our commitment to sustainability by promoting more eco-friendly practices and programs.
+            Community Engagement: Partnering with industry leaders and organisations to promote career involvement and support professional growth. 
+            Global Expansion: Exploring opportunities for international expansion to bring our career development programs to a global audience.
+            </p>
+    </section>
     
-    <footer>
+    <section id="global-reach">
+        <h2>Global Reach</h2>
+        <p>Online Career Progression has experienced significant growth since it started the business and now serves clients globally. Our platform is designed to provide efficient access to our training programs and advisory services, ensuring that professionals from around the world can easily benefit from our offerings. Below are some of the regions we serve:
 
-    </footer>
+            London, UK
+            New York, USA
+            Sydney, Australia
+            Toronto, Canada
+            Singapore
+            Dubai, UAE
+            Hong Kong
+            Berlin, Germany
+            Paris, France
+            </p>
+    </section>
+
+    <section id="growth">
+        <h2>Promoting Professional Growth</h2>
+        <p>We are passionate about promoting professional growth and development. Our commitment to this cause is reflected in our diverse range of training programs designed to enhance various career skills. We also provide resources and support to help clients achieve their professional goals.</p>
+
+            
+    </section>
+    
+    <section id="staff">
+        <h2>Staff Members</h2>
+        <p>Our dedicated staff plays a pivotal role in ensuring that clients have a productive and enriching learning experience.</p>
+    
+        <div class="staff-container">
+            <div class="staff-card">
+                <img src="images/rachel.jpg" alt="Rachel" class="staff-img">
+                <h3>Rachel Brown</h3>
+                <p class="title">Customer Support Manager</p>
+                <a href="#"><i class="fab i-staff fa-dribbble fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-facebook fa-2x"></i></a>
+            </div>
+    
+            <div class="staff-card">
+                <img src="images/ademoye.jpg" alt="Ademoye" class="staff-img">
+                <h3>Ademoye Thompson</h3>
+                <a href="#"><i class="fab i-staff fa-dribbble fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-facebook fa-2x"></i></a>
+            </div>
+    
+            <div class="staff-card">
+                <img src="images/wei.jpg" alt="Wei" class="staff-img">
+                <h3>Wei Ling</h3>
+                <p class="title">Web Developer</p>
+                <a href="#"><i class="fab i-staff fa-dribbble fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-facebook fa-2x"></i></a>
+                
+            </div>
+    
+            <div class="staff-card">
+                <img src="images/ali.jpg" alt="Ali" class="staff-img">
+                <h3>Ali Khan</h3>
+                <p class="title">Customer Support Manager</p>
+                <a href="#"><i class="fab i-staff fa-dribbble fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab i-staff fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+    
+         
+            <p>Each member of our team is committed to providing excellent service and maintaining the quality of our training programs and advisory services.</p>  
+            
+        </p>
+    </section>
+           
+   </main>
+  
+   <footer>
+    <p>&copy; 2025 Online Career Progression. All rights reserved.</p>
+    <a href="#"><i class="fab fa-dribbble fa-2x"></i></a>
+    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+</footer>
+
+  
+
 </body>
 </html>

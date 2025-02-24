@@ -1,18 +1,116 @@
 <html>
 <head>
     <title>Online Career Progression </title>
- <link rel="stylesheet" type="text/css" href="style.css">
-</head>     
+    <meta   charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Career Progression">
+    <meta name="keywords" content="Career, Progression, Online">
+    <meta name="author" content="Online Career Progression">
+    
+ <link rel="stylesheet" type="text/css" href="styles/main.css">
+ <link rel="stylesheet" type="text/css" href="styles/news_events.styles.css">
+ <link rel="stylesheet" type="text/css" href="styles/slicknav.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/jquery.slicknav.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<script>
+   $(document).ready(function(){
+    $('.main-nav').slicknav({
+        prependTo: ".mobile_menu",
+          });
+});
+</script>
+
+</head> 
+    
 <body>
     <header>
-        <h1 class = "main-header">Online Career Progression</h1>
+      
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a> 
+        <h1 class="main-header">Online Career Progression</h1>
+     
+
+        <div class="mobile_menu"></div> <!-- Mobile Menu Container for slicknav -->
+        <nav class="main-nav">
+            <ul>
+          
+                <!-- Two Tier Navbar -->
+                <li>
+                    <a href="#">About</a>
+                    <ul class="two-tier">
+                        <li><a href="about_us.html#mission">Our Mission</a></li>
+                        <li><a href="about_us.html#global-reach">Global Reach</a></li>
+                        <li><a href="about_us.html#staff">Staff Members</a></li>
+                        <li><a href="about_us.html#growth">Promoting Professional Growth</a></li>
+                    </ul>
+                </li>
+                <li><a href="events_news.html">News & Events</a></li>
+                <li><a href="training_programs.html" class="last-item">Training Programs</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+        </nav>
+        
     </header>
-    <main>
-
-    </main>
     
-    <footer>
+   
+    <!-- Main Content Section -->
+    <main id = "events-main">
+        <section id = "events-section">
 
+            <article class = "events-article">
+               <h2>Daily News and Updates</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem laboriosam eos ipsum aut incidunt temporibus dolores qui quo cumque eligendi quos, voluptatibus laudantium assumenda dignissimos ratione neque, expedita nulla corrupti! </p>
+               
+                <img src="images/person_at_desk.jpg" alt="home" class="desk">
+            </article>
+
+            <article class = "events-article">
+                <h2>Events and Promotions
+                </h2>
+                 <p>To boost community engagement and participation, we regularly organise events and promotions. These events can include: 
+                <ul>
+                    <li>Webinars: Interactive online sessions with industry experts on various career topics.
+                    </li>
+                    <li>Skill Competitions: Encouraging clients to showcase their skills and win prizes.</li>
+                    <li>Virtual Networking Events: Providing opportunities for clients to connect with peers and mentors.
+                    </li>
+                </ul>
+                Events are promotions are communicated through our website, email newsletters, and social media channels to attract a wider audience.
+                </p>
+                               
+                 <img src="images/person_at_desk.jpg" alt="home" class="desk">
+             </article>
+
+           
+
+            <aside id = "events-aside">
+                <h3>Have a look at our Social Media for more up to date info </h3>
+                <a href="#"><i class="fab fa-aside fa-dribbble fa-2x"></i></a>
+                <a href="#"><i class="fab fa-aside fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-aside fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab fa-aside fa-facebook fa-2x"></i></a>
+            </aside>
+        </section>
+    </main>
+
+  
+    <footer>
+        <p>&copy; 2025 Online Career Progression. All rights reserved.</p>
+        <a href="#"><i class="fab fa-dribbble fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
     </footer>
+
+  
+
 </body>
 </html>

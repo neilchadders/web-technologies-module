@@ -1,0 +1,60 @@
+form {
+    text-align: center;
+}
+
+#registration-main{ /* Styled in line with other main tags on other pages*/
+    width: 100%;
+    padding: 5%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px; 
+}
+
+.form-container button {
+    display: block;
+    margin: 0 auto;
+   
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 60%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}

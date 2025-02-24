@@ -1,46 +1,120 @@
 <html>
 <head>
     <title>Online Career Progression </title>
- <link rel="stylesheet" type="text/css" href="main.css">
- 
-</head>     
+    <meta   charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Career Progression">
+    <meta name="keywords" content="Career, Progression, Online">
+    <meta name="author" content="Online Career Progression">
+    
+ <link rel="stylesheet" type="text/css" href="styles/main.css">
+ <link rel="stylesheet" type="text/css" href="styles/home.styles.css">
+ <link rel="stylesheet" type="text/css" href="styles/slicknav.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/jquery.slicknav.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+    $('.main-nav').slicknav({
+        prependTo: ".mobile_menu",
+          });
+});
+</script>
+
+</head> 
+    
 <body>
     <header>
-        <img class = "logo" src="images/logo.jpg" alt="logo" class="logo">
-    <nav>
-        <ul>
-            <li><a href="about_us.html" class = "current">About</a></li>
-            <li><a href="contact_us.html">Contact</a></li>
-            <li><a href="events_news.html">Events</a></li>
-            <li><a href="training_programs.html" class = "last-item">Training Programs</a></li>
-        </ul>
-    </nav>
+      
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a> 
+        <h1 class="main-header">Online Career Progression</h1>
+     
 
-        <h1 class = "main-header">Online Career Progression</h1>
-
-         <!-- Navbar -->
+        <div class="mobile_menu"></div> <!-- Mobile Menu Container for slicknav -->
+        <nav class="main-nav">
+            <ul>
+          
+                <!-- Two Tier Navbar -->
+                <li>
+                    <a href="#">About</a>
+                    <ul class="two-tier">
+                        <li><a href="about_us.html#mission">Our Mission</a></li>
+                        <li><a href="about_us.html#global-reach">Global Reach</a></li>
+                        <li><a href="about_us.html#staff">Staff Members</a></li>
+                        <li><a href="about_us.html#growth">Promoting Professional Growth</a></li>
+                    </ul>
+                </li>
+                <li><a href="events_news.html">News & Events</a></li>
+                <li><a href="training_programs.html" class="last-item">Training Programs</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+        </nav>
+        
     </header>
-
+    
+   
     <!-- Main Content Section -->
-    <main>
-        <section>
-            <article>
-                <h2>Article Title 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non risus auctor, fermentum nisl vel, varius magna.</p>
+    <main id = "home-main">
+        <section id = "home-section">
+            <article class = "home-article">
+               
+                <p>Online Career Progression is a leading e-platform dedicated to providing career development advice and skill training for professionals seeking to advance in their careers. </p>
+            <img src="images/person_at_desk.jpg" alt="home" id="person-at-desk">
             </article>
 
-            <article>
-                <h2>Article Title 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            <article class = "home-article">
+                
+                <p>This well-rounded approach is aimed at increasing participation and enhancing career development.
+                </p>
             </article>
 
-            <aside>
+            <article >
+                <h2 class = "with-columns-header">What do our clients think?</h2>
+                    <p> Online Career Progression is a leading e-platform dedicated to providing career development advice and skill training for professionals seeking to advance in their careers. </p>
+                    <div class="with-columns">
+                    <figure>
+                        <blockquote>Online Career Progression has been instrumental in advancing my career. The leadership training was exceptional.</blockquote>
+                        <br><figcaption>Anita S</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <blockquote>I appreciate the variety of courses available. The project management course significantly improved my skills.</blockquote>
+                            <br><figcaption>Mark B</figcaption>
+                    </figure>
+                    
+                    <figure>
+                    <blockquote>The staff at Online Career Progression is incredibly supportive. The career coaching sessions have been a game changer for me.</blockquote>
+                    <br><figcaption>John D</figcaption>
+                    </figure>   
+                </div>
+            </article>
+
+            <aside id = "home-aside">
                 <h3>More Info</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>You can read more about career development and skill enhancement on these links:
+                </p><a href="https://www.city.ac.uk/prospective-students/career-development">City University London - Career Development</a></p>
+                <p><a href="https://www.skillsforcareers.education.gov.uk/pages/training-choice/skills-bootcamp">Skills Bootcamp</a></p>
             </aside>
         </section>
     </main>
 
+  
+    <footer>
+        <p>&copy; 2025 Online Career Progression. All rights reserved.</p>
+        <a href="#"><i class="fab fa-dribbble fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+    </footer>
 
   
 

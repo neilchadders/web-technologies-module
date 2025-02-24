@@ -1,18 +1,115 @@
 <html>
 <head>
     <title>Online Career Progression </title>
- <link rel="stylesheet" type="text/css" href="style.css">
-</head>     
+    <meta   charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Career Progression">
+    <meta name="keywords" content="Career, Progression, Online">
+    <meta name="author" content="Online Career Progression">
+    
+ <link rel="stylesheet" type="text/css" href="styles/main.css">
+ <link rel="stylesheet" type="text/css" href="styles/contact.styles.css">
+ <link rel="stylesheet" type="text/css" href="styles/slicknav.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/jquery.slicknav.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+    $('.main-nav').slicknav({
+        prependTo: ".mobile_menu",
+          });
+});
+</script>
+
+</head> 
+    
 <body>
     <header>
-        <h1 class = "main-header">Online Career Progression</h1>
+      
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a> 
+        <h1 class="main-header">Online Career Progression</h1>
+     
+
+        <div class="mobile_menu"></div> <!-- Mobile Menu Container for slicknav -->
+        <nav class="main-nav">
+            <ul>
+          
+                <!-- Two Tier Navbar -->
+                <li>
+                    <a href="#">About</a>
+                    <ul class="two-tier">
+                        <li><a href="about_us.html#mission">Our Mission</a></li>
+                        <li><a href="about_us.html#global-reach">Global Reach</a></li>
+                        <li><a href="about_us.html#staff">Staff Members</a></li>
+                        <li><a href="about_us.html#growth">Promoting Professional Growth</a></li>
+                    </ul>
+                </li>
+                <li><a href="events_news.html">News & Events</a></li>
+                <li><a href="training_programs.html" class="last-item">Training Programs</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+        </nav>
+        
     </header>
-    <main>
-
-    </main>
     
-    <footer>
+   
+    <!-- Main Content Section -->
+    <main id = "registration-main">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+        
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        
+            <label for="confirm-email">Confirm Email Address:</label>
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm Email" required>
+        
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Location" required>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+        
+            <label for="Program">Select Program of Interest:</label>
+            <select id="program" name="program" required>
+                <option value="">-- Choose Program Type --</option>
+                <option value="All">All</option>
+                <option value="Digital">Digital</option>
+                <option value="Management">Management</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Customer Service">Customer Service</option>
+            </select>
+        
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Your message"></textarea>
+        
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error-message" style="color: red; display: none;"></p>
+        
+    </main>
 
+  
+    <footer>
+        <p>&copy; 2025 Online Career Progression. All rights reserved.</p>
+        <a href="#"><i class="fab fa-dribbble fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
     </footer>
+
+  
+<script src="scripts/main.js"></script>
 </body>
 </html>

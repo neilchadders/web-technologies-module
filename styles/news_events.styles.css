@@ -1,0 +1,42 @@
+
+#events-main{
+    width: 100%;
+    
+}
+#events-section{
+    width: 64%; 
+    float: left; 
+   
+padding: 5%;
+margin: 20px auto;
+background-color: #fff;
+border-radius: 8px;
+}
+
+#events-aside{
+    width: 31%; /* Prevents content from overlapping section so less than 33%  */
+    padding: 1em;
+    
+    position: absolute; 
+    right: 20px;
+    top: 40%;
+
+text-align: center;
+   padding: 2%;
+   margin: 20px auto;
+   background-color: #fff;
+   border-radius: 8px;
+}
+
+
+.desk{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.fa-aside{
+  color: black;
+}

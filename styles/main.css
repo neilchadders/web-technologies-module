@@ -1,0 +1,233 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body{
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 100%;
+    font-family: "Open Sans", serif;
+    padding: 15px 0;
+    position: relative;
+    background-image: url("../images/backgroundimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+   
+
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 2em; /* Space for .main-header */
+    width: 100%;
+    border-bottom: 2px solid black;
+  }
+
+    /* Logo */
+    
+    .logo{
+        width: 14%;
+        float: left top;
+    
+        }
+
+.main-header {
+  color: black;
+  text-align: center;
+  width: 100%;
+  /* Pushes it to the bottom of header */
+}
+
+/* Navbar CSS */
+ul{ /* Remove default padding as was appearing in the console as "padding-inline-start: 40px" from user agent stylesheet;*/
+        
+    padding-inline-start: 0;
+}
+.main-nav {
+    display: flex;
+    justify-content: center; 
+    background: linear-gradient(45deg, #007BFF, #0056b3); 
+    padding: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.main-nav ul {
+    list-style: none;
+    margin: 0 10px;
+   
+}
+
+/* Main Nav Items */
+.main-nav ul li {
+    position: relative; 
+    border: none;
+    float: left;
+}
+
+
+.main-nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.main-nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: yellow;
+    transform: scale(1.11);
+}
+
+
+/* Dropdown Menu - hidden at first */
+.two-tier {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    min-width: 200px;
+    border-radius: 8px;
+    padding: 5px 0;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav ul li:hover .two-tier {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Style submenu items */
+.two-tier li {
+    border-top: none;
+}
+
+.two-tier li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.two-tier li a:hover {
+    background: #ffeb3b;
+    color: black;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    /*  footer */
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+        
+        bottom: 0;
+        clear: both;
+      }
+
+    i{
+        
+        color: white;
+        margin: 0.3em;
+    }
+  
+
+    /* Show the original nav on larger screens */
+@media only screen and (min-width: 768px) {
+    .slicknav_menu {
+        display: none;
+        
+    }
+    .two-tier {
+        display: none;
+        position: absolute;
+        top: 100%; /* Position below the parent */
+        left: 0;
+        background: darkblue;
+        min-width: 200px;
+        z-index: 10;
+    }
+
+    /* Show dropdown on hover */
+    .main-nav ul li:hover .two-tier {
+        display: block;
+    }
+}
+
+    @media only screen and (max-width: 900px) {
+        main, section, aside, header, footer { /* Initially used "body" however reducing font size to 90% only worked when more specific selectors used. */
+            font-size: 90%;
+        }
+        
+    }
+
+    @media only screen and (max-width: 767px) {
+      .logo{
+        min-width: 160px; /* Used px and not % or em as did not want logo any smaller */
+      }
+        
+    /* Show the mobile nav on smaller screens */
+    .main-nav {
+        display: none;
+    }
+    .dropdown {
+        display: block;
+    }
+    .slicknav_menu {
+        display: block;
+       
+        background-color: blue !important; /* Had to use importannt to override slicknav.css */
+        color: white !important; 
+        background: linear-gradient(45deg, #007BFF, #0056b3) !important; 
+        padding: 15px 0 !important;
+        border-radius: 10px !important;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)!important;
+
+        
+    }
+    .slicknav_nav .two-tier {
+        display: none;
+        position: static;
+        background: blue; 
+        padding-left: 15px; /* Indent submenu */
+    }
+
+    .slicknav_open > .two-tier {
+        display: block !important; 
+    }
+}
+
+
+@media only screen and (max-width: 479px) {
+    main, section, aside, header, footer { /* Initially used "body" however reducing font size to 90% only worked when more specific selectors used. */
+        font-size: 85%;
+    }
+    
+}

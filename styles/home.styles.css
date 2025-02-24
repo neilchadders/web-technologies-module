@@ -1,0 +1,108 @@
+/*  main */
+
+
+
+#home-main{
+    
+   width: 100%;
+     
+ }
+ 
+ /*  section */
+ #home-section{
+    width: 64%; /*not 66% so as to prevent overlap with aside element */
+    float: left; 
+    padding: 5%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+ }    
+
+#person-at-desk{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+ /*  article with columns*/
+
+.with-columns{
+     column-count: 3; /* Three columns for satisfied clients on larger screens (stacks on smaller - see below)*/
+     column-gap: 1em;
+     padding: 1em;
+     column-rule: 2px solid black;
+ }
+
+ .with-columns-header{
+ column-span: all; /* This ensures the header spans all columns */
+ text-align: center;
+ }
+
+ blockquote{
+    margin:0;
+ }
+ blockquote:before {
+    content: open-quote;
+  }
+  
+  blockquote:after {
+    content: close-quote;
+  }
+
+ /*  aside */
+ #home-aside{
+     width: 31%; /* Prevents content from overlapping section so less than 33%  */
+     padding: 1em;
+     position: absolute;  /* This ensures the aside is fixed to the right */
+     right: 20px;
+     top: 40%;
+    padding: 5%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+ }
+
+ #home-aside a {
+    text-decoration: none;
+    color: green; /* Default link color */
+}
+
+
+#home-aside a:visited {
+    color: brown; /* Visited link color - turns to brown as specified */
+}
+
+
+#home-aside a:hover,
+#home-aside a:focus {
+    color: pink; /* Hovered link color - turns to pink as specified */
+}
+
+ @media only screen and (max-width: 767px) {
+    .logo{
+      min-width: 160px; /* Used px and not % or em as did not want logo any smaller */
+    }
+      
+
+    #home-aside {
+      float: none; 
+      width: 100%; 
+      margin: 20px 0; 
+      position: static;  /* This portion of CSS means the aside is moved to the bottom when screnn size reduces */
+
+    }
+
+    #home-aside ul li{
+        list-style: none;
+    }
+
+  #home-section {
+      width: 100%; 
+      float: none; /* This portion of CSS means the main element stacks when screnn size reduces */
+  }
+
+  .with-columns{
+      column-count: 1; /* Reduces single column  when on mobile*/
+  }
+}
+
